@@ -8,7 +8,7 @@ import asyncio
 
 from handlers.plan import get_training_plan
 
-API_TOKEN = '7274015743:AAF00b-IIWIeIJd0JxQTHLm-5RVIjSexLa4'
+API_TOKEN = '7274015743:AAF00b-IIWIeIJd0JxQTHLm-5RVIjSexLa4'#не стоит прописывать токен в теле бота - небезопасно
 
 logging.basicConfig(level=logging.INFO)
 
