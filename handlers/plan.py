@@ -1,9 +1,7 @@
-from aiogram import Router
-from aiogram.types import Message
-from aiogram.filters import Command
-
-router = Router()
-
-@router.message(Command("plan"))
-async def plan_cmd(message: Message):
-    await message.answer("План тренировок ещё не настроен 🛠️")
+def get_training_plan() -> str:
+    return (
+        "📅 *План тренировок на турнике:*\n\n"
+        "🔹 Подтягивания — 4 подхода по минимум 10 повторений\n"
+        "💡 Отдых между подходами: 60–90 секунд\n"
+        "📈 Постарайся увеличивать количество повторений каждую неделю!\n"
+    )
